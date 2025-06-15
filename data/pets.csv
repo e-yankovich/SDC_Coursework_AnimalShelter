@@ -1,0 +1,37 @@
+name,sex,color,age_months,weight,photo,vaccinated,admission_date,special_care_required,breed_name,species_name,shelter_name,curator_last_name
+Rocky,F,Orange,83,31.3,some_url.jpg,true,2024-11-02,false,Mixed,Dog,Berlin Animal Shelter,Schmidt
+Max,F,White,50,36.6,some_url.jpg,true,2024-03-07,false,Mixed,Dog,Berlin Animal Shelter,Becker
+Buddy,F,Brown,77,11.6,some_url.jpg,true,2024-05-11,false,German Shepherd,Dog,Hamburg Rescue Center,Keller
+Jack,M,Orange,67,38.1,some_url.jpg,true,2024-09-27,false,Mixed,Dog,Berlin Animal Shelter,Schmidt
+Cooper,M,Tabby,26,20.5,some_url.jpg,true,2024-02-01,true,Mixed,Dog,Hamburg Rescue Center,Schwarz
+Bear,F,Spotted,39,9.7,some_url.jpg,true,2023-10-17,false,Mixed,Dog,Berlin Animal Shelter,Schmidt
+Duke,M,White,33,37.7,some_url.jpg,true,2024-06-01,true,Mixed,Dog,Berlin Animal Shelter,Lange
+Toby,M,White,90,12.9,some_url.jpg,true,2024-05-17,false,German Shepherd,Dog,Hamburg Rescue Center,Voigt
+Leo,M,Gray,57,12.2,some_url.jpg,true,2024-11-20,false,Mixed,Dog,Hamburg Rescue Center,Schwarz
+Bentley,M,Gray,10,36.6,some_url.jpg,false,2025-01-14,true,Mixed,Dog,Berlin Animal Shelter,Becker
+Milo,F,Orange,30,29.0,some_url.jpg,true,2024-09-12,false,Mixed,Dog,Hamburg Rescue Center,Braun
+Rex,M,Gray,71,35.5,some_url.jpg,true,2024-10-09,true,Mixed,Dog,Hamburg Rescue Center,Braun
+Oscar,F,Black,75,26.6,some_url.jpg,true,2025-05-11,true,German Shepherd,Dog,Berlin Animal Shelter,Becker
+Charlie,F,Gray,57,24.1,some_url.jpg,true,2024-07-14,false,Mixed,Dog,Berlin Animal Shelter,Schmidt
+Finn,M,Brown,90,26.0,some_url.jpg,true,2025-01-21,false,Mixed,Dog,Berlin Animal Shelter,Becker
+Simba,F,Gray,40,31.1,some_url.jpg,true,2025-03-23,true,Mixed,Dog,Hamburg Rescue Center,Voigt
+Hunter,M,Cream,89,23.8,some_url.jpg,false,2024-10-23,false,Dachshund,Dog,Hamburg Rescue Center,Schwarz
+Bailey,F,White,48,27.7,some_url.jpg,true,2023-07-06,true,Mixed,Dog,Berlin Animal Shelter,Müller
+Zeus,F,Spotted,89,26.2,some_url.jpg,false,2023-11-29,true,Mixed,Dog,Hamburg Rescue Center,Keller
+Buster,M,Orange,62,14.5,some_url.jpg,true,2023-12-23,false,Mixed,Dog,Hamburg Rescue Center,Braun
+Tank,M,Brown,48,12.0,some_url.jpg,true,2025-03-09,false,Weimaraner,Dog,Berlin Animal Shelter,Lange
+Diesel,M,White,82,16.3,some_url.jpg,true,2024-02-04,true,Mixed,Dog,Hamburg Rescue Center,Braun
+Bruno,M,Tabby,74,32.2,some_url.jpg,false,2023-12-24,false,Mixed,Dog,Hamburg Rescue Center,Keller
+Apollo,M,Black,59,14.4,some_url.jpg,false,2025-05-11,true,Mixed,Dog,Hamburg Rescue Center,Braun
+Luna,M,Gray,31,1.8,some_url.jpg,true,2023-08-23,true,Mixed,Cat,Hamburg Rescue Center,Keller
+Bella,F,Cream,67,1.6,some_url.jpg,true,2025-05-02,true,Bengal,Cat,Berlin Animal Shelter,Lange
+Kitty,F,White,30,1.6,some_url.jpg,true,2025-02-23,false,Mixed,Cat,Hamburg Rescue Center,Schwarz
+Loki,F,Tabby,33,2.7,some_url.jpg,true,2023-12-03,true,Mixed,Cat,Hamburg Rescue Center,Schwarz
+Nala,M,Gray,57,2.6,some_url.jpg,true,2025-03-15,false,Mixed,Cat,Berlin Animal Shelter,Lange
+Mochi,F,Brown,5,4.2,some_url.jpg,true,2025-05-20,true,Mixed,Cat,Hamburg Rescue Center,Voigt
+Oreo,F,White,44,6.3,some_url.jpg,true,2024-01-05,false,Mixed,Cat,Berlin Animal Shelter,Schmidt
+Cleo,F,Brown,22,3.8,some_url.jpg,true,2025-05-13,false,Mixed,Cat,Hamburg Rescue Center,Schwarz
+Milo,M,Orange,15,3.9,some_url.jpg,true,2025-03-16,false,Mixed,Cat,Berlin Animal Shelter,Becker
+Simba,M,Gray,71,6.5,some_url.jpg,true,2024-04-19,true,Bengal,Cat,Berlin Animal Shelter,Lange
+Leo,F,Cream,34,3.1,some_url.jpg,true,2025-06-13,false,Bengal,Cat,Hamburg Rescue Center,Schwarz
+Zoe,F,Spotted,16,6.9,some_url.jpg,true,2024-07-10,false,Mixed,Cat,Berlin Animal Shelter,Schmidt

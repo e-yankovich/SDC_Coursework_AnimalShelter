@@ -1,0 +1,21 @@
+username,email,password,first_name,last_name,phone,passport_number,address,city_name
+alice01,alice@example.com,pass123,Alice,Winter,+491111111101,AB123456,Cat Street 1,Berlin
+john_d,john@example.com,pass1234,John,Smith,+491111111102,CD234567,Dog Ave 7,Hamburg
+maria85,maria@example.com,petlover,Maria,Rossi,+491111111103,EF345678,Roma 21,Rome
+lukas88,lukas@example.com,letmein88,Lukas,Weber,+491111111104,GH456789,Parkallee 5,Milan
+katya22,katya@example.com,meowcat,Ekaterina,Ivanova,+491111111105,IJ567890,Berliner Platz 3,Paris
+julia_f,julia@example.com,adoptme123,Julia,Fischer,+491111111106,KL678901,Birkenweg 8,Lyon
+nino88,nino@example.com,puppylove,Nino,Bianchi,+491111111107,MN789012,Roma Straße 2,Rome
+tomasz23,tomasz@example.com,123paw,Tomasz,Nowak,+491111111108,OP890123,Gartenstraße 12,Berlin
+greta_d,greta@example.com,doggo22,Greta,Dahl,+491111111109,QR901234,Moose Alley 4,Stockholm
+freddy_k,freddy@example.com,ilovedogs,Freddy,Koch,+491111111110,ST012345,Mainstr. 16,Amsterdam
+anna.pet,anna@example.com,catsrock,Anna,Peterson,+491111111111,UV123456,Waldweg 33,Lyon
+leo456,leo@example.com,schnauzer,Leonard,Meier,+491111111112,WX234567,Ringstraße 10,Hamburg
+zoe88,zoe@example.com,adopt88,Zoe,Müller,+491111111113,YZ345678,Feldweg 14,Milan
+markz,mark@example.com,petpass,Mark,Zeiler,+491111111114,AA456789,Elbchaussee 7,Paris
+emma.love,emma@example.com,letmein,Emma,Lang,+491111111115,BB567890,Baumgartenweg 9,Berlin
+lars.s,lars@example.com,swedepet,Lars,Svensson,+491111111116,CC678901,Norr Mälarstrand,Stockholm
+isabelle.t,isabelle@example.com,doglover,Isabelle,Trépanier,+491111111117,DD789012,Rue des Chiens,Paris
+peter.v,peter@example.com,woofpass,Peter,Vermeulen,+491111111118,EE890123,Hondstraat 2,Amsterdam
+chiara.rossi,chiara@example.com,cats2024,Chiara,Rossi,+491111111119,FF901234,Via dei Gatti,Milan
+jean.luc,jean@example.com,1234meow,Jean-Luc,Moreau,+491111111120,GG012345,Rue des Pattes,Lyon

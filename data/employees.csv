@@ -1,0 +1,9 @@
+first_name,last_name,is_vet,shelter_name
+Lisa,Becker,true,Berlin Animal Shelter
+Tobias,Schmidt,true,Berlin Animal Shelter
+Nina,Müller,false,Berlin Animal Shelter
+Kevin,Lange,false,Berlin Animal Shelter
+Sandra,Keller,true,Hamburg Rescue Center
+Jan,Voigt,true,Hamburg Rescue Center
+Maja,Braun,false,Hamburg Rescue Center
+Felix,Schwarz,false,Hamburg Rescue Center

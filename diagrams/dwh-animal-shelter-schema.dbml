@@ -1,0 +1,102 @@
+// FACT TABLES
+
+Table fact_adoption {
+  adoption_id int [pk]
+  date_key int
+  pet_key int
+  adopter_key int
+  shelter_key int
+  adoption_count int
+}
+
+Table fact_medical_visit {
+  visit_id int [pk]
+  date_key int
+  pet_key int
+  vet_key int
+  shelter_key int
+  visit_count int
+  next_visit_days int
+}
+
+// SCD TYPE 2 DIMENSION
+
+Table dim_pet {
+  pet_key int [pk]
+  pet_id int // business key
+  name varchar(50)
+  sex char(1)
+  color varchar(30)
+  breed_key int
+  vaccinated boolean
+  special_care_required boolean
+  weight numeric(6,3)
+  age_months int
+  is_current boolean
+}
+
+// OTHER DIMENSIONS
+
+Table dim_adopter {
+  adopter_key int [pk]
+  full_name varchar(100)
+  city_name varchar(100)
+  country_name varchar(100)
+}
+
+Table dim_employee {
+  employee_key int [pk]
+  full_name varchar(100)
+  shelter_key int
+}
+
+Table dim_role {
+  role_key int [pk]
+  role_name varchar(50)
+}
+
+Table dim_shelter {
+  shelter_key int [pk]
+  shelter_name varchar(100)
+  city_name varchar(100)
+  country_name varchar(100)
+}
+
+Table dim_breed {
+  breed_key int [pk]
+  breed_name varchar(50)
+  species_name varchar(50)
+}
+
+Table dim_date {
+  date_key int [pk]
+  full_date date
+  day int
+  month int
+  year int
+  quarter int
+  weekday_name varchar(10)
+}
+
+// BRIDGE TABLE
+
+Table bridge_employee_role {
+  employee_key int
+  role_key int
+}
+
+// RELATIONSHIPS
+
+Ref: fact_adoption.date_key > dim_date.date_key
+Ref: fact_adoption.pet_key > dim_pet.pet_key
+Ref: fact_adoption.adopter_key > dim_adopter.adopter_key
+Ref: fact_adoption.shelter_key > dim_shelter.shelter_key
+
+Ref: fact_medical_visit.date_key > dim_date.date_key
+Ref: fact_medical_visit.pet_key > dim_pet.pet_key
+Ref: fact_medical_visit.vet_key > dim_employee.employee_key
+Ref: fact_medical_visit.shelter_key > dim_shelter.shelter_key
+
+Ref: dim_pet.breed_key > dim_breed.breed_key
+Ref: bridge_employee_role.employee_key > dim_employee.employee_key
+Ref: bridge_employee_role.role_key > dim_role.role_key

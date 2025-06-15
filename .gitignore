@@ -1,0 +1,37 @@
+# macOS system files
+.DS_Store
+
+# JetBrains IDEs (e.g., PyCharm, IntelliJ)
+.idea/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment files
+.env
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# Backup files
+*.bak
+*.swp
+*.tmp

@@ -1,0 +1,104 @@
+Table Country {
+  country_id int [pk]
+  country_name varchar(100)
+}
+
+Table City {
+  city_id int [pk]
+  city_name varchar(100)
+  country_id int
+}
+
+Table Species {
+  species_id int [pk]
+  species_name varchar(50)
+}
+
+Table Breed {
+  breed_id int [pk]
+  breed_name varchar(50)
+  species_id int
+}
+
+Table Shelter {
+  shelter_id int [pk]
+  shelter_name varchar(100)
+  address text
+  city_id int
+  phone varchar(20)
+}
+
+Table Adopter {
+  adopter_id int [pk]
+  username varchar(50) [unique]
+  email varchar(120) [unique]
+  password varchar(255)
+  first_name varchar(50)
+  last_name varchar(50)
+  phone varchar(20)
+  passport_number varchar(20)
+  address text
+  city_id int
+}
+
+Table ShelterEmployee {
+  employee_id int [pk]
+  first_name varchar(50)
+  last_name varchar(50)
+  is_vet boolean
+  shelter_id int
+}
+
+Table Pet {
+  pet_id int [pk]
+  name varchar(50)
+  sex char(1) [note: 'M or F only']
+  color varchar(30)
+  age_months int
+  weight numeric(6,3)
+  photo text
+  vaccinated boolean [default: false]
+  admission_date date
+  special_care_required boolean [default: false]
+  breed_id int
+  shelter_id int
+  curator_id int
+}
+
+Table AdoptionRequest {
+  request_id int [pk]
+  adopter_id int
+  pet_id int
+  status varchar(20) [note: 'One of: pending, approved, rejected']
+}
+
+Table AdoptionHistory {
+  history_id int [pk]
+  adopter_id int
+  pet_id int
+  adoption_date date
+}
+
+Table MedicalRecord {
+  record_id int [pk]
+  pet_id int
+  vet_id int
+  record_date date
+  next_visit_date date
+  description text
+}
+
+Ref: City.country_id > Country.country_id
+Ref: Breed.species_id > Species.species_id
+Ref: Shelter.city_id > City.city_id
+Ref: ShelterEmployee.shelter_id > Shelter.shelter_id
+Ref: Adopter.city_id > City.city_id
+Ref: Pet.breed_id > Breed.breed_id
+Ref: Pet.shelter_id > Shelter.shelter_id
+Ref: Pet.curator_id > ShelterEmployee.employee_id
+Ref: AdoptionRequest.adopter_id > Adopter.adopter_id
+Ref: AdoptionRequest.pet_id > Pet.pet_id
+Ref: AdoptionHistory.adopter_id > Adopter.adopter_id
+Ref: AdoptionHistory.pet_id > Pet.pet_id
+Ref: MedicalRecord.pet_id > Pet.pet_id
+Ref: MedicalRecord.vet_id > ShelterEmployee.employee_id
