@@ -98,11 +98,8 @@ WHERE dp.pet_id IS NULL
 -- Deactivate previous current versions
 UPDATE dim_pet
 SET is_current = FALSE
-    FROM (
-    SELECT pet_id FROM dim_pet
-    GROUP BY pet_id HAVING COUNT(*) > 1
-) sub
-WHERE dim_pet.pet_id = sub.pet_id AND is_current = TRUE;
+WHERE pet_id IN (SELECT pet_id FROM dim_pet GROUP BY pet_id HAVING COUNT(*) > 1)
+AND pet_key NOT IN (SELECT MAX(pet_key) FROM dim_pet GROUP BY pet_id);
 
 SELECT * FROM dim_pet;
 
