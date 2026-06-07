@@ -1,15 +1,4 @@
-DROP TABLE IF EXISTS
-    fact_adoption,
-    fact_medical_visit,
-    bridge_employee_role,
-    dim_pet,
-    dim_adopter,
-    dim_employee,
-    dim_role,
-    dim_shelter,
-    dim_breed,
-    dim_date
-    CASCADE;
+DROP TABLE IF EXISTS fact_adoption, fact_medical_visit, bridge_employee_role, dim_pet, dim_adopter, dim_employee, dim_role, dim_shelter, dim_breed, dim_date CASCADE;
 
 CREATE TABLE IF NOT EXISTS fact_adoption (
      adoption_id INT PRIMARY KEY,
@@ -20,7 +9,7 @@ CREATE TABLE IF NOT EXISTS fact_adoption (
      adoption_count INT
 );
 
-CREATE TABLE fact_medical_visit (
+CREATE TABLE IF NOT EXISTS fact_medical_visit (
     visit_id INT PRIMARY KEY,
     date_key INT,
     full_date DATE,
