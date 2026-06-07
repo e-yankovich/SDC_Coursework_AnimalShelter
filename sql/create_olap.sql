@@ -77,6 +77,7 @@ CREATE TABLE IF NOT EXISTS dim_date (
     );
 
 CREATE TABLE IF NOT EXISTS bridge_employee_role (
+    PRIMARY KEY (employee_key, role_key)
     employee_key INT,
     role_key INT
 );
