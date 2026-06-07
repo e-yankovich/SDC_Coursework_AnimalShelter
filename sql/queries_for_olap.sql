@@ -16,7 +16,7 @@ SELECT
 FROM dim_employee de
          JOIN bridge_employee_role ber ON ber.employee_key = de.employee_key
          JOIN dim_role dr ON dr.role_key = ber.role_key
-GROUP BY de.full_name
+GROUP BY de.employee_key, de.full_name
 HAVING COUNT(DISTINCT dr.role_name) > 1;
 
 -- Veterinary visits: monthly activity
