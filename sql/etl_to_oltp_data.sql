@@ -225,7 +225,7 @@ CREATE TEMP TABLE tmp_adoption_history (
     adoption_date DATE
 );
 
--- Manually upload data for Adoption Requests in psql:
+-- Upload for Adoption History:
 \copy tmp_adoption_history(adopter_username, pet_name, species_name, adoption_date) FROM 'data/adoption_history.csv' DELIMITER ',' CSV HEADER;
 
 INSERT INTO AdoptionHistory (
