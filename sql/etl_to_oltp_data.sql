@@ -208,9 +208,10 @@ SELECT
     t.status
 FROM tmp_adoption_request t
 JOIN Adopter a ON a.username = t.adopter_username
-JOIN Species sp ON sp.species_name = t.species_name
-JOIN Breed b ON b.species_id = sp.species_id
-JOIN Pet p ON p.name = t.pet_name AND p.breed_id = b.breed_id
+JOIN Pet p ON p.name = t.pet_name
+JOIN Breed b ON b.breed_id = p.breed_id
+JOIN Species sp ON sp.species_id = b.species_id
+              AND sp.species_name = t.species_name
 LEFT JOIN AdoptionRequest ar ON ar.adopter_id = a.adopter_id AND ar.pet_id = p.pet_id
 WHERE ar.request_id IS NULL;
 
@@ -237,9 +238,10 @@ SELECT
     t.adoption_date
 FROM tmp_adoption_history t
 JOIN Adopter a ON a.username = t.adopter_username
-JOIN Species sp ON sp.species_name = t.species_name
-JOIN Breed b ON b.species_id = sp.species_id
-JOIN Pet p ON p.name = t.pet_name AND p.breed_id = b.breed_id
+JOIN Pet p ON p.name = t.pet_name
+JOIN Breed b ON b.breed_id = p.breed_id
+JOIN Species sp ON sp.species_id = b.species_id
+              AND sp.species_name = t.species_name
 LEFT JOIN AdoptionHistory h ON h.adopter_id = a.adopter_id AND h.pet_id = p.pet_id
 WHERE h.history_id IS NULL;
 
